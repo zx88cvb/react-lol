@@ -36,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "publishConfig": {
+    "registry": "http://192.168.1.174:4873"
   }
 }
