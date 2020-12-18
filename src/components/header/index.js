@@ -1,6 +1,7 @@
+import styles from './index.css';
 function Header() {
   return (
-    'lol'
+    <div className={styles.title}>haha</div>
   );
 }
 
