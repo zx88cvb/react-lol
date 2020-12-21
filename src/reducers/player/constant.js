@@ -1,0 +1,4 @@
+export const GET_PLAYER_LIST = "GET_PLAYER_LIST";
+export const ADD_PLAYER = "ADD_PLAYER";
+export const DELETE_PLAYER = "DELETE_PLAYER";
+export const GROUP_PLAYER = "GROUP_PLAYER";

@@ -1,3 +1,4 @@
 import { renderRoutes } from "react-router-config";
 
-export default ({ route }) => <>{renderRoutes(route.routes)}</>;
+const blank = ({ route }) => <>{renderRoutes(route.routes)}</>;
+export default blank;
