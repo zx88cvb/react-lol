@@ -9,6 +9,7 @@ import { GlobalStyle } from './reset';
 import { CommonStyle } from './assets/global-style';
 
 import Header from '@/components/header';
+import Footer from '@/components/footer';
 
 function App() {
   const [state, dispatch] = useReducer(reducer, {
@@ -25,6 +26,7 @@ function App() {
       <BrowserRouter>
         <Header />
         {renderRoutes(routes)}
+        <Footer />
       </BrowserRouter>
     </Context.Provider>
   );

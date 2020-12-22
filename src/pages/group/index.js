@@ -4,11 +4,12 @@ import React from 'react';
 import { List } from 'antd';
 
 function Group(props) {
-  const list = props.group;
+  const {group, header} = props;
   return (
     <List
+      header={header}
       itemLayout="horizontal"
-      dataSource={list}
+      dataSource={group}
       renderItem={item => (
         <List.Item>
           <List.Item.Meta

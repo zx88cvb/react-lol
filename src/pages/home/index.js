@@ -54,13 +54,6 @@ function Home() {
           </List.Item>
         )}
       />
-      // list.map(item => (
-        
-      //   <li key={item.id}
-      //     onClick={() => handleRemoveClick(item.id)}>
-      //     {item.name}
-      //   </li>
-      // ))
     );
   }
   return(
@@ -69,6 +62,7 @@ function Home() {
         <Row>
           <Col span={24}>
             <Input placeholder="请输入玩家名称"
+              style={{ width: 300}}
               ref={inputRef}/>
             <Button type="primary"
               style={{ marginLeft: 8 }}
@@ -82,10 +76,14 @@ function Home() {
         </Row>
         <Row>
           <Col span={12}>
-            <Group group={groupA}></Group>
+            <Group
+              header="Blue Team"
+              group={groupA} />
           </Col>
           <Col span={12}>
-            <Group group={groupB}></Group>
+            <Group
+              header="Red Team"
+              group={groupB} />
           </Col>
         </Row>
         <Row>
