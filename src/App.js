@@ -5,6 +5,8 @@ import routes from "./routes";
 import reducer from './reducers';
 import Context from './context';
 import './App.css';
+import { GlobalStyle } from './reset';
+import { CommonStyle } from './assets/global-style';
 
 import Header from '@/components/header';
 
@@ -18,6 +20,8 @@ function App() {
   });
   return (
     <Context.Provider value={{ state, dispatch }}>
+      <GlobalStyle />
+      <CommonStyle />
       <BrowserRouter>
         <Header />
         {renderRoutes(routes)}

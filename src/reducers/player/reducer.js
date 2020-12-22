@@ -25,7 +25,7 @@ const reducer = (state, action) => {
       oldArr.sort(() => Math.random()>0.5?-1:1);
       let groupA = [];
       let groupB = [];
-      oldArr.map((element, index) => {
+      oldArr.forEach((element, index) => {
         if (index + 1 <= oldArr.length / 2) {
           groupA.push(element);
         } else {
