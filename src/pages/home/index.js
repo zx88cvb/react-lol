@@ -16,6 +16,8 @@ function Home() {
   console.log(state);
   // 玩家list
   const players = state.player.players;
+  const groupA = state.player.groupA;
+  const groupB = state.player.groupB;
 
   // 玩家输入框
   const inputRef = useRef(null);
@@ -68,8 +70,8 @@ function Home() {
           </ul>
         </div>
         <div className={styles.group_box}>
-          <Group></Group>
-          <Group></Group>
+          <Group group={groupA}></Group>
+          <Group group={groupB}></Group>
         </div>
         <div>
           <Button type="primary"
